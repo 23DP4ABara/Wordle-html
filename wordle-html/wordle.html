@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wordle Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Wordle Logo" />
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <!-- Decorative squares -->
+    <div class="square green-square s1"></div>
+    <div class="square yellow-square s2"></div>
+    <div class="square gray-square s3"></div>
+    <div class="square green-square s4"></div>
+    <div class="square yellow-square s5"></div>
+    <div class="square gray-square s6"></div>
+    <div class="square yellow-square s7"></div>
+    <div class="square green-square s8"></div>
+    <div class="square gray-square s9"></div>
+    <div class="square yellow-square s10"></div>
+    <div class="square green-square s11"></div>
+    <div class="square gray-square s12"></div>
+    <div class="square yellow-square s13"></div>
+    <div class="square green-square s14"></div>
+    <div class="square gray-square s15"></div>
+    <div class="square yellow-square s16"></div>
+    <div class="square green-square s17"></div>
+    <div class="square gray-square s18"></div>
+
+    <h2>Play the Classic Wordle Game!</h2>
+    <p>Challenge your brain and try to guess the word.</p>
+    <a href="https://github.com/23DP4ABara/Wordle/archive/refs/heads/master.zip" class="download-btn" id="download">Download ZIP</a>
+  </section>
+
+  <main>
+    <section id="about" class="about" style="max-width: 1200px; padding: 4rem 3rem;">
+      <h2>About the Program</h2>
+
+      <h3>Wordle</h3>
+      <p><strong>Wordle</strong> is a word guessing game with both terminal and graphical (GUI) interfaces. Your goal is to guess the hidden word within a limited number of attempts.</p>
+      <p>Before the game starts, you can customize three settings: the number of guesses, the number of hints (tips), and the length of the word to guess. The game uses a dictionary text file to validate guesses.</p>
+
+      <h3>How to Play</h3>
+      <ul>
+        <li>If a letter is in the correct position, it is shown in <strong style="color: var(--green)">green</strong>.</li>
+        <li>If a letter is in the word but in the wrong position, it is shown in <strong style="color: var(--yellow)">yellow</strong>.</li>
+        <li>If a letter is not in the word, it is shown in <strong style="color: var(--gray)">gray</strong>.</li>
+      </ul>
+      <p>You can use a tip (hint) by clicking the "Tip" button. Hints will reveal a letter in the word that hasn't already been revealed as green or yellow. If there are no more unrevealed letters, the game will notify you in the tip area.</p>
+      <p>The game continues until you guess the word or run out of attempts. At the end, the correct word is displayed if you didn't guess it.</p>
+      <p>Game history is saved to <code>game_history.txt</code> after each game, including the word, result, attempts, and tips used.</p>
+
+      <h3>Requirements</h3>
+      <ul>
+        <li>Python 3.x</li>
+        <li>Tkinter (usually included with Python)</li>
+      </ul>
+
+      <h3>Running the Game</h3>
+      <p><strong>GUI version:</strong></p>
+      <pre>python Wordle.py</pre>
+
+      <h3>Dictionary</h3>
+      <p>The game uses <code>words/words_alpha.txt</code> as its dictionary. You can replace this file with any word list you prefer.</p>
+
+      <hr />
+      <p>Enjoy playing!</p>
+    </section>
+  </main>
+
+  <section id="contact" class="contact" style="max-width: 900px; margin: 3rem auto 2rem auto; background: #fff; border-radius: 20px; box-shadow: 0 4px 32px rgba(0,0,0,0.08); padding: 3rem 2.5rem; border-left: 8px solid var(--yellow); border-right: 8px solid var(--green);">
+    <h2>Contact Us</h2>
+    <p>If you have questions, feedback, or need support, feel free to reach out:</p>
+    <ul>
+      <li>Email: <a href="mailto:support@wordlegame.com">support@wordlegame.com</a></li>
+      <li>Twitter: <a href="https://twitter.com/wordlegame" target="_blank">@wordlegame</a></li>
+    </ul>
+    <h3>Our Office</h3>
+    <p>
+      Wordle Game HQ<br>
+      123 Puzzle Lane<br>
+      Brain City, 45678<br>
+      Country
+    </p>
+    <h3>Business Hours</h3>
+    <ul>
+      <li>Monday - Friday: 9:00 AM – 6:00 PM</li>
+      <li>Saturday: 10:00 AM – 2:00 PM</li>
+      <li>Sunday: Closed</li>
+    </ul>
+    <h3>Support Form</h3>
+    <form style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px;">
+      <label>
+        Your Name:
+        <input type="text" name="name" required style="width: 100%; padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;">
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="email" required style="width: 100%; padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;">
+      </label>
+      <label>
+        Message:
+        <textarea name="message" rows="4" required style="width: 100%; padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+      </label>
+      <button type="submit" style="background: var(--green); color: white; border: none; border-radius: 20px; padding: 0.7rem 1.5rem; font-weight: bold; cursor: pointer;">Send Message</button>
+    </form>
+    <h3>FAQ</h3>
+    <ul>
+      <li><strong>How do I launch the game?</strong> – Simply download the zip file above and launch the wordle.py file.</li>
+      <li><strong>Can I suggest new features?</strong> – Yes! Email us or use the support form above.</li>
+      <li><strong>Where can I find the word list?</strong> – See the "Dictionary" section above.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Wordle Game. All rights reserved.
+  </footer>
+
+</body>
+</html>
