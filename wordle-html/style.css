@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #e9f3e3; /* Soft greenish background for a fresh look */
+  background-color: #e9f3e3; 
   color: var(--gray);
   line-height: 1.6;
 }
@@ -26,11 +26,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 2.5rem; /* Add space below header */
+  margin-bottom: 2.5rem; 
 }
 
 header img {
-  height: 70px; /* Make logo slightly bigger */
+  height: 70px; 
 }
 
 nav a {
@@ -57,7 +57,7 @@ nav a:hover {
   opacity: 0.85;
 }
 
-/* --- HERO SECTION: Restore original look --- */
+
 .hero {
   position: relative;
   text-align: center;
@@ -69,7 +69,7 @@ nav a:hover {
   margin: 0 auto;
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-  /* Remove thick colored borders */
+
 }
 
 .hero h2 {
@@ -135,7 +135,7 @@ nav a:hover {
   background-color: var(--gray);
 }
 
-/* Hero square positioning */
+
 .s1  { top: 5%;  left: 5%;  transform: rotate(5deg);}
 .s2  { top: 15%; left: 12%;}
 .s3  { top: 25%; left: 7%;}
@@ -184,7 +184,7 @@ nav a:hover {
   display: inline-block;
 }
 
-/* --- ABOUT SECTION: Card with left and right borders --- */
+
 .about {
   background: #fff;
   border-radius: 20px;
@@ -193,10 +193,10 @@ nav a:hover {
   max-width: 900px;
   margin: 3rem auto 2rem auto;
   border-left: 8px solid var(--green);
-  border-right: 8px solid var(--yellow); /* Add yellow border on the right */
+  border-right: 8px solid var(--yellow); 
 }
 
-/* --- CONTACT SECTION: Match About section style --- */
+
 .contact {
   background: #fff;
   border-radius: 20px;
@@ -205,10 +205,10 @@ nav a:hover {
   max-width: 900px;
   margin: 3rem auto 2rem auto;
   border-left: 8px solid var(--green);
-  border-right: 8px solid var(--yellow); /* Match About section borders */
+  border-right: 8px solid var(--yellow); 
 }
 
-/* Remove borders from text headlines */
+
 .about h2, .about h3 {
   border: none;
   padding-bottom: 0;
